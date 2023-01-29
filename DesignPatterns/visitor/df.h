@@ -23,8 +23,8 @@ class IntColumn : public Column {
         void accept(ColumnVisitor& v) override {
             v.visit(*this);
         }
-        auto begin() { return data_.begin(); }
-        auto end() { return data_.end(); }
+        // auto begin() { return data_.begin(); }
+        // auto end() { return data_.end(); }
 };
 
 class StringColumn : public Column {
@@ -33,8 +33,8 @@ class StringColumn : public Column {
         void accept(ColumnVisitor& v) override {
             v.visit(*this);
         }
-        auto begin() { return data_.begin(); }
-        auto end() { return data_.end(); }
+        // auto begin() { return data_.begin(); }
+        // auto end() { return data_.end(); }
 };
 
 class DataFrame {
